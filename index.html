@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Database</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Student Database</h1>
+
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-button">Search</button>
+    </div>
+
+    <div id="sort-buttons">
+        <button onclick="handleSort('AZ')">Sort by Name (A-Z)</button>
+        <button onclick="handleSort('ZA')">Sort by Name (Z-A)</button>
+        <button onclick="handleSort('marks')">Sort by Marks</button>
+        <button onclick="handleSort('passing')">Show Passing</button>
+        <button onclick="handleSort('class')">Sort by Class</button>
+        <button onclick="handleSort('gender')">Sort by Gender</button>
+    </div>
+
+    <table id="student-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Class</th>
+                <th>Marks</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+                <td>Male</td>
+                <td>10</td>
+                <td>85</td>
+                <td>Passing</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+                <td>Female</td>
+                <td>11</td>
+                <td>92</td>
+                <td>Passing</td>
+            </tr>
+            <tr>
+                <td>Michael Johnson</td>
+                <td>michael@example.com</td>
+                <td>Male</td>
+                <td>12</td>
+                <td>78</td>
+                <td>Failing</td>
+            </tr>
+            <tr>
+                <td>Sarah Lee</td>
+                <td>sarah@example.com</td>
+                <td>Female</td>
+                <td>10</td>
+                <td>88</td>
+                <td>Passing</td>
+            </tr>
+            <tr>
+                <td>David Kim</td>
+                <td>david@example.com</td>
+                <td>Male</td>
+                <td>11</td>
+                <td>95</td>
+                <td>Passing</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
